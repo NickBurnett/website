@@ -11,7 +11,7 @@
     flex-grow: 1;
     flex-shrink: 1;
     margin: 20px 30px 20px 30px;
-    width: 500px;
+    width: 45%;
     height: fit-content;
     transition: 0.5s;
 }
