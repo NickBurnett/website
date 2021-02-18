@@ -1,0 +1,38 @@
+#footer {
+    align-self: center;
+    clear: both;
+    margin: 5px 10% 10px 10%;
+}
+#foot {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    padding: 0 40px 0 40px;
+}
+.foot-item {
+    margin: 5px 5px 5px 5px;
+}
+.fa-website {
+    text-align: center;
+    float: none;
+    color: rgb(185, 185, 185);
+    font-size: 10pt;
+    transition: 0.5s;
+}
+.fa-website:hover {
+    color: rgb(219, 126, 255);
+    transition: color 0.5s;
+}
+.fa-github, .fa-linkedin {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    color: rgb(185, 185, 185);
+    transition: 0.5s;
+}
+.fa-github:hover, .fa-linkedin:hover {
+    color: rgb(219, 126, 255);
+    cursor: pointer;
+    transition: color 0.5s;
+}

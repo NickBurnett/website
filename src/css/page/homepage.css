@@ -1,0 +1,59 @@
+@import url('../general/keyframe.css');
+@import url('../general/text-highlight.css');
+#home-intro {
+    align-self: center;
+    margin: 20px 20% 50px 20%;
+}
+#home-intro-text {
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+    white-space: pre-wrap;
+    text-overflow: normal;
+    font-family: "Courier New", monospace;
+    font-size: 3.5em;
+    animation: focus 2s;
+    color: rgb(185, 185, 185);
+    transition: 0.5s;
+}
+#home-terminal {
+    background-color: transparent;
+    align-self: center;
+    margin: 20px 10% 50px 10%;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 15px;
+    border-color: black;
+    align-items: center;
+    font-size: 0pt;
+    font-family: monospace, sans-serif, serif;
+    animation: focus 1s;
+}
+#home-terminal:hover #home-terminal-input {
+    background-color: rgb(8, 8, 8);
+    transition: background-color 1s;
+}
+#home-terminal-output {
+    outline: none;
+    resize: none;
+    border: none;
+    font-size: 14pt;
+    align-self: center;
+    width: 100%;
+    height: 30em;
+    background-color: rgb(15, 15, 15);
+    color: rgb(185, 185, 185);
+}
+#home-terminal-output::-webkit-scrollbar {
+    visibility: hidden;
+}
+#home-terminal-input {
+    outline: none;
+    border: none;
+    font-size: 14pt;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(15, 15, 15);
+    color: rgb(185, 185, 185);
+    transition: 0.5s;
+}

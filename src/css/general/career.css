@@ -1,0 +1,55 @@
+@import url('../general/keyframe.css');
+.career-flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 20px 10% 20px 10%;
+    animation: focus 1s;
+}
+.career-item {
+    font-family: 'Times New Roman', Times, serif;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 20px 30px 20px 30px;
+    width: 500px;
+    height: fit-content;
+    transition: 0.5s;
+}
+.career-item:hover .career-item-title {
+    color: rgb(255, 174, 0);
+    transition: color 1s;
+}
+.career-item:hover .career-item-sub {
+    color: rgb(15, 175, 0);
+    transition: color 1s;
+}
+.career-item:hover .career-item-desc {
+    color: rgb(187, 180, 255);
+    transition: color 1s;
+}
+.career-item-title {
+    font-size: 2.5em;
+    color: rgb(185, 185, 185);
+    transition: 0.5s;
+}
+.career-item-sub {
+    font-size: 1.2em;
+    color: rgb(185, 185, 185);
+    transition: 0.5s;
+}
+.career-item-desc {
+    word-wrap: normal;
+    font-size: 1.3em;
+    color: rgb(185, 185, 185);
+    transition: 0.5s;
+}
+.career-item-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.career-item-flexitem {
+    margin: 5px 5px;
+    font-size: 1.7em;
+    width: fit-content;
+    height: fit-content;
+}
