@@ -12,7 +12,7 @@ class HomePage extends React.Component {
         return (
             <div id='main-page'>
                 <Introduction />
-                <Terminal />
+                <Terminal/>
             </div>
         );
     }

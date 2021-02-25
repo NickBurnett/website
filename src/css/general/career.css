@@ -1,4 +1,6 @@
 @import url('../general/keyframe.css');
+@import url('../core/navigationbar.css');
+@import url('../general/variable.css');
 .career-flex {
     display: flex;
     flex-wrap: wrap;
@@ -16,31 +18,38 @@
     transition: 0.5s;
 }
 .career-item:hover .career-item-title {
-    color: rgb(255, 174, 0);
+    color: var(--orange0);
     transition: color 1s;
 }
 .career-item:hover .career-item-sub {
-    color: rgb(15, 175, 0);
+    color: var(--green0);
     transition: color 1s;
 }
 .career-item:hover .career-item-desc {
-    color: rgb(187, 180, 255);
+    color: var(--purple1);
+    transition: color 1s;
+}
+.career-item:hover .career-item-flexitem {
+    color: var(--red1);
     transition: color 1s;
 }
 .career-item-title {
-    font-size: 2.5em;
-    color: rgb(185, 185, 185);
+    --color: var(--gray0);
+    font-size: 3.5em;
+    color: var(--color);
     transition: 0.5s;
 }
 .career-item-sub {
-    font-size: 1.2em;
-    color: rgb(185, 185, 185);
+    --color: var(--gray0);
+    font-size: 2em;
+    color: var(--color);
     transition: 0.5s;
 }
 .career-item-desc {
+    --color: var(--gray0);
     word-wrap: normal;
-    font-size: 1.3em;
-    color: rgb(185, 185, 185);
+    font-size: 1.8em;
+    color: var(--color);
     transition: 0.5s;
 }
 .career-item-flex {
@@ -48,8 +57,10 @@
     flex-wrap: wrap;
 }
 .career-item-flexitem {
-    margin: 5px 5px;
-    font-size: 1.7em;
+    --color: var(--gray0);
+    color: var(--color);
+    margin: 7px 10px;
+    font-size: 2.5em;
     width: fit-content;
     height: fit-content;
 }

@@ -7,7 +7,7 @@ class Footer extends React.Component {
             <div id="footer">
                 <ul id="foot">
                     <li className="foot-item">
-                        <span className="fa-website">nickburnett.me</span>
+                        <div className="fa-website">nickburnett.me</div>
                     </li>
                     <li className="foot-item" onClick={() => window.open("https://github.com/NickBurnett")}>
                         <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">

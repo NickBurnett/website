@@ -1,4 +1,6 @@
 @import url('../general/font.css');
+@import url('../general/keyframe.css');
+@import url('../general/variable.css');
 #navigation {
     align-self: center;
 }
@@ -6,7 +8,7 @@
     margin: 0;
     background-color: black;
     list-style: none;
-    padding: 0 40px 0 40px;
+    padding: 0 40px;
     text-align: center;
     font-family: "ReggaeOne";
 }
@@ -15,29 +17,32 @@
     background-color: transparent;
     color: white;
     float: none;
-    margin: 0 40px 0 40px;
-    padding: 15px 20px 15px 20px;
+    margin: 0 40px;
+    padding: 15px 20px;
     border-radius: 5px;
     transition: 0.5s;
 }
 .nav-item:hover {
     cursor: pointer;
-    background-color: #262626;
-    transition: background-color 0.5s;
+    background-color: var(--gray1);
+    transition: background-color 1s;
 }
-#nav-home:hover {
-    color: rgb(0, 169, 247);
+.nav-item-cur {
+    animation: infinite color-cycle 5s;
+}
+#nav-home:hover, #nav-home.nav-item-cur {
+    color: var(--blue0);
     transition: color 0.5s;
 }
-#nav-about:hover {
-    color: rgb(255, 123, 0);
+#nav-about:hover, #nav-about.nav-item-cur {
+    color: var(--orange1);
     transition: color 0.5s;
 }
-#nav-projects:hover {
-    color: rgb(0, 255, 64);
+#nav-projects:hover, #nav-projects.nav-item-cur {
+    color: var(--green1);
     transition: color 0.5s;
 }
 #nav-contact:hover {
-    color: rgb(159, 42, 255);
+    color: var(--purple3);
     transition: color 0.5s;
 }
