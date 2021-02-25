@@ -1,5 +1,6 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
+import { updateNav } from '../core/NavigationBar';
 import '../../css/page/homepage.css';
 
 class Terminal extends React.Component {
@@ -36,11 +37,13 @@ class Terminal extends React.Component {
                     break;
                 }
                 if (arr[1] === 'about') {
+                    updateNav('nav-about');
                     await this.setState({
                         text: this.state.text,
                         redirect: '/about'
                     });
                 } else {
+                    updateNav('nav-projects');
                     await this.setState({
                         text: this.state.text,
                         redirect: '/projects'

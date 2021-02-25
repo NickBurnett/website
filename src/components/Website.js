@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route, withRouter } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import NavigationBar from './core/NavigationBar';
 import Footer from './core/Footer';
 import HomePage from './HomePage';
@@ -17,9 +17,9 @@ class Website extends React.Component {
             <div id='website'>
                 <NavigationBar />
                 <Switch>
-                    <Route path='/projects' render={routeProps => <ProjectPage {...routeProps}/>} />
-                    <Route path='/about' render={routeProps => <AboutPage {...routeProps} />} />
-                    <Route path='/' component={routeProps => <HomePage {...routeProps} />} />
+                    <Route path='/projects'><ProjectPage /></Route>
+                    <Route path='/about'><AboutPage /></Route>
+                    <Route path='/'><HomePage /></Route>
                 </Switch>
                 <Footer />
             </div>

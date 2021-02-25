@@ -1,14 +1,19 @@
+@import url('../general/variable.css');
 .text-highlight-1 {
+    --color: var(--gray0);
+    color: var(--color);
     transition: 0.5s;
 }
 .text-highlight-1:hover {
-    color: rgb(176, 80, 255);
-    transition: color 1.0s;
+    color: var(--purple3);
+    transition: color 0.5s;
 }
 .text-highlight-2 {
+    --color: var(--gray0);
+    color: var(--color);
     transition: 0.5;
 }
 .text-highlight-2:hover {
-    color: rgb(255, 174, 0);
-    transition: color 1.0s;
+    color: var(--orange0);
+    transition: color 0.5s;
 }

@@ -1,11 +1,13 @@
 import React from 'react';
 import CareerItem from './general/CareerItem';
+import { updateNav } from './core/NavigationBar';
 import '../css/page/aboutpage.css';
 
 class AboutPage extends React.Component {
     constructor() {
         super();
         this.state = {};
+        updateNav('nav-about');
     }
     render() {
         return (

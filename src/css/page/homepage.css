@@ -1,5 +1,6 @@
 @import url('../general/keyframe.css');
 @import url('../general/text-highlight.css');
+@import url('../general/variable.css');
 #home-intro {
     align-self: center;
     margin: 20px 20% 50px 20%;
@@ -13,7 +14,7 @@
     font-family: "Courier New", monospace;
     font-size: 3.5em;
     animation: focus 2s;
-    color: rgb(185, 185, 185);
+    color: var(--gray0);
     transition: 0.5s;
 }
 #home-terminal {
@@ -23,14 +24,14 @@
     border-style: solid;
     border-radius: 8px;
     border-width: 15px;
-    border-color: black;
+    border-color: var(--black0);
     align-items: center;
     font-size: 0pt;
     font-family: monospace, sans-serif, serif;
     animation: focus 1s;
 }
 #home-terminal:hover #home-terminal-input {
-    background-color: rgb(8, 8, 8);
+    background-color: var(--black3);
     transition: background-color 1s;
 }
 #home-terminal-output {
@@ -41,8 +42,8 @@
     align-self: center;
     width: 100%;
     height: 30em;
-    background-color: rgb(15, 15, 15);
-    color: rgb(185, 185, 185);
+    background-color: var(--black2);
+    color: var(--gray0);
 }
 #home-terminal-output::-webkit-scrollbar {
     visibility: hidden;
@@ -53,7 +54,7 @@
     font-size: 14pt;
     width: 100%;
     height: 100%;
-    background-color: rgb(15, 15, 15);
-    color: rgb(185, 185, 185);
+    background-color: var(--black2);
+    color: var(--gray0);
     transition: 0.5s;
 }

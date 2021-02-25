@@ -22,15 +22,15 @@
     transition: color 1s;
 }
 .career-item:hover .career-item-sub {
-    color: var(--green0);
-    transition: color 1s;
-}
-.career-item:hover .career-item-desc {
     color: var(--purple1);
     transition: color 1s;
 }
+.career-item:hover .career-item-desc {
+    color: var(--blue1);
+    transition: color 1s;
+}
 .career-item:hover .career-item-flexitem {
-    color: var(--red1);
+    color: var(--blue1);
     transition: color 1s;
 }
 .career-item-title {

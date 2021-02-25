@@ -1,9 +1,10 @@
 @import url('../general/keyframe.css');
 @import url('../general/text-highlight.css');
 @import url('../general/career.css');
+@import url('../general/variable.css');
 #about {
     width: 80%;
-    margin: 20px 10% 20px 10%;
+    margin: 20px 10%;
 }
 #about-intro {
     font-family: 'Times New Roman', Times, serif;
@@ -11,5 +12,5 @@
     text-align: center;
     word-wrap: normal;
     animation: focus 1s;
-    color: rgb(185, 185, 185);
+    color: var(--gray0);
 }
