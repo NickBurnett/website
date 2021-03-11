@@ -1,0 +1,16 @@
+@import url('./keyframe.css');
+.hide {
+    opacity: 0;
+}
+.fade-in-0 {
+    animation: load-drop-0 0.8s;
+}
+.fade-in-1 {
+    animation: load-drop-1 0.8s;
+}
+.fade-out-0 {
+    animation: load-drop-0 reverse 0.8s;
+}
+.fade-out-1 {
+    animation: load-drop-1 reverse 0.8s;
+}

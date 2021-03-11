@@ -1,8 +1,0 @@
-@keyframes focus {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-@keyframes color-cycle {
-    from { filter: hue-rotate(0deg); }
-    to { filter: hue-rotate(360deg); }
-}

@@ -1,0 +1,42 @@
+@keyframes jiggle {
+    10% { transform: rotate(0deg); }
+    33% { transform: rotate(-10deg); }
+    66% { transform: rotate(10deg); }
+    99% { transform: rotate(0deg); }
+}
+@keyframes load-fade {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+@keyframes load-drop-0 {
+    from { transform: translateY(-60px); opacity: 0; }
+    to { transform: translateY(0px); opacity: 1; }
+}
+@keyframes load-drop-1 {
+    from { transform: translateY(-40px); opacity: 0; }
+    to { transform: translateY(0px); opacity: 1; }
+}
+@keyframes load-drop-rev-0 {
+    from { transform: translateY(300px); }
+    to { transform: translateY(0); }
+}
+@keyframes load-circle-shrink {
+    from {
+        opacity: 1;
+    }
+    to {
+        font-size: 0vmin;
+        r: 0%;
+        stroke-width: 1px;
+        opacity: 0.2;
+    }
+}
+@keyframes load-circle-grow {
+    from {
+        opacity: 1;
+    }
+    to {
+        r: 500%;
+        opacity: 0;
+    }
+}

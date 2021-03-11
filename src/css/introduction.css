@@ -1,0 +1,39 @@
+@import url('./resource/class.css');
+@import url('./resource/font.css');
+@import url('./resource/variable.css');
+#introduction {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 200px auto;
+    justify-content: left;
+    align-items: flex-start;
+}
+#intro-hello {
+    margin-top: 10px;
+    font-family: Rock, sans-serif;
+    font-size: 25px;
+    color: var(--color3);
+}
+#intro-name {
+    margin-top: 5px;
+    font-family: Rock, sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+    color: var(--color2);
+}
+#intro-sub {
+    margin-top: 10px;
+    width: 80%;
+    font-family: Rock, sans-serif;
+    font-size: 40px;
+    word-wrap: normal;
+    color: var(--color5);
+}
+#intro-desc {
+    margin-top: 10px;
+    width: 80%;
+    font-family: Rock, sans-serif;
+    font-size: 20px;
+    color: var(--color5);
+}
