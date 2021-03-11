@@ -1,0 +1,49 @@
+@import url('./resource/variable.css');
+@import url('./resource/keyframe.css');
+@import url('./resource/font.css');
+@import url('./resource/class.css');
+#contact {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 300px 0 200px 40%;
+    justify-content: left;
+    align-items: flex-start;
+}
+#contact-title {
+    margin-top: 10px;
+    font-family: Rock, sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+    color: var(--color2);
+}
+.contact-paragraph {
+    margin-top: 15px;
+    width: 80%;
+    word-wrap: normal;
+    font-family: Rock, sans-serif;
+    font-size: 20px;
+    color: var(--color5);
+}
+#contact-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-button {
+    margin: 10px;
+    padding: 7px;
+    font-family: Rock, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--color5);
+    outline: none;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+.contact-button:hover {
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: var(--color6);
+    transition: 0.5s;
+}
