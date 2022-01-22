@@ -36,7 +36,7 @@ export default class About extends Component {
                     I'm currently a Sophomore at the University of Texas at Dallas. Aside from my stellar grades and uncompromising work ethic, I am heavily involved in the Association for Computing Machinery as a Developer.
                 </div>
                 <div className='about-paragraph'>
-                    Since I'm always looking for any opportunity to expand my technical and team-based skills, I'm actively searching for internships for the Summer and Fall of 2022.
+                    Since I'm always looking for any opportunity to expand my technical and team-based skills, I'm actively searching for internships for the Fall of 2022.
                 </div>
                 <div className='about-paragraph'>
                     If you're interested in getting in contact, please do so through my socials on the left. Also, feel free to check out my GitHub page for up-to-date changes to my projects.
