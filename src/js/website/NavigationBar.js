@@ -17,7 +17,7 @@ export default class NavigationBar extends Component {
             for (const e of document.getElementsByClassName('nav-item')) {
                 delay += 0.5;
                 setTimeout(() => {
-                    e.classList.add('fade-in-0');
+                    //e.classList.add('fade-in-0');
                     e.classList.remove('hide');
                 }, delay * 1000);
             }
@@ -39,13 +39,19 @@ export default class NavigationBar extends Component {
         return (
             <div id='navigation'>
                 <ul id='nav-bar'>
-                    <li id='nav-about' className='nav-item nav-item-page hide' onClick={() => {
+                    <li id='nav-about' className='nav-item nav-item-page' onClick={() => {
                         window.location.href = '#about';
                     }}>ABOUT</li>
-                    <li id='nav-theme' className='nav-item hide' onClick={() => this.switchTheme() }>{this.state.theme}</li>
-                    <li id='nav-projects' className='nav-item nav-item-page hide' onClick={() => {
+                    <li id='nav-projects' className='nav-item nav-item-page' onClick={() => {
                         window.location.href = '#projects';
                     }}>PROJECTS</li>
+                    <li id='nav-theme' className='nav-item' onClick={() => this.switchTheme() }>{this.state.theme}</li>
+                    <li id='nav-projects' className='nav-item nav-item-page' onClick={() => {
+                        window.location.href = '#experience';
+                    }}>EXPERIENCE</li>
+                    <li id='nav-projects' className='nav-item nav-item-page' onClick={() => {
+                        window.location.href = '#contact';
+                    }}>CONTACT</li>
                 </ul>
             </div>
         );

@@ -29,8 +29,8 @@ export default class Introduction extends Component {
             <div id='introduction' className={this.state.hide ? 'hide' : ''}>
                 <div id='intro-hello'>Hi, my name is</div>
                 <div id='intro-name'>Nicolas Burnett.</div>
-                <div id='intro-sub'>I'm an aspiring software engineer.</div>
-                <div id='intro-desc'>I'm a college student based in the Dallas area honing practical software development skills and building cool projects like this in my free time.</div>
+                <div id='intro-sub'>I'm a software engineer.</div>
+                <div id='intro-desc'>I'm a college student based in the Dallas area honing practical software development skills and building cool projects in my free time.</div>
             </div>
         );
     }

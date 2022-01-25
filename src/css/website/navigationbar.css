@@ -3,48 +3,56 @@
 @import url('../resource/keyframe.css');
 @import url('../resource/class.css');
 #navigation {
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
 }
 #nav-bar {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    font-size: 30px;
-    font-family: 'Rock', sans-serif;
-    font-weight: bolder;
-    color: var(--color5);
+  display: flex;
+  width: 90vw;
+  margin: auto;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  font-size: 2vw;
+  font-family: 'Rock', sans-serif;
+  font-weight: bolder;
+  color: var(--color5);
+  opacity: 0;
+  animation: 0.5s win;
+  animation-fill-mode: forwards;
 }
 .nav-item {
-    display: inline-block;
-    text-align: center;
-    margin: 10px;
-    padding: 15px 8px;
-    border-radius: 3px;
-    transition: 0.5s;
+  display: inline-block;
+  text-align: center;
+  margin: 0.25vw;
+  padding: 10px 8px;
+  border-radius: 3px;
+  transition: 0.25s;
 }
 .nav-item-page:hover {
-    background-color: var(--color6);
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background-color 0.5s, border-radius 0.5s;
+  background-color: var(--color6);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.5s, border-radius 0.5s;
 }
 .nav-theme {
-    width: 1.3em;
-    height: 1.3em;
+  width: 1.3em;
+  height: 1.3em;
 }
 .nav-theme:hover {
-    cursor: pointer;
-    animation: jiggle 0.7s infinite;
+  cursor: pointer;
+  animation: jiggle 0.7s infinite;
 }
 #nav-theme-dark {
-    color: var(--red1);
+  color: var(--red1);
 }
 #nav-theme-light {
-    color: var(--blue0);
+  color: var(--blue0);
+}
+@keyframes win {
+  to {
+    opacity: 1;
+  }
 }

@@ -2,38 +2,38 @@
 @import url('./resource/font.css');
 @import url('./resource/variable.css');
 #introduction {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    margin: 200px auto;
-    justify-content: left;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 12vw auto;
+  justify-content: left;
+  align-items: flex-start;
 }
 #intro-hello {
-    margin-top: 10px;
-    font-family: Rock, sans-serif;
-    font-size: 25px;
-    color: var(--color3);
+  margin-top: 10px;
+  font-family: Rock, sans-serif;
+  font-size: 1.75vw;
+  color: var(--color3);
 }
 #intro-name {
-    margin-top: 5px;
-    font-family: Rock, sans-serif;
-    font-size: 55px;
-    font-weight: bold;
-    color: var(--color2);
+  margin-top: 5px;
+  font-family: Rock, sans-serif;
+  font-size: 3.25vw;
+  font-weight: bold;
+  color: var(--color2);
 }
 #intro-sub {
-    margin-top: 10px;
-    width: 80%;
-    font-family: Rock, sans-serif;
-    font-size: 40px;
-    word-wrap: normal;
-    color: var(--color5);
+  margin-top: 10px;
+  width: 80%;
+  font-family: Rock, sans-serif;
+  font-size: 2.5vw;
+  word-wrap: normal;
+  color: var(--color5);
 }
 #intro-desc {
-    margin-top: 10px;
-    width: 80%;
-    font-family: Rock, sans-serif;
-    font-size: 20px;
-    color: var(--color5);
+  margin-top: 10px;
+  width: 80%;
+  font-family: Rock, sans-serif;
+  font-size: 1.25vw;
+  color: var(--color5);
 }
