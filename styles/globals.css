@@ -1,8 +1,14 @@
-@import url('./text.css');
 :root {
-  --color-black: #141414;
+  --color-black: #0f0f0f;
   --color-gray: #838383;
-  --color-white: #ededed;
+  --color-white: #fafafa;
+
+  --text-small: 1.25rem;
+  --text-normal: 1.5rem;
+  --text-medium: 1.825rem;
+  --text-large: 2.5rem;
+  --text-mega: 3rem;
+  --text-mega-giga: 3.5rem;
 }
 html,
 body {
