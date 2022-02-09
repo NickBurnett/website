@@ -1,0 +1,12 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  margin: var(--text-mega-giga);
+}
+.title {
+  font-size: var(--text-large);
+}
+.content {
+  display: flex;
+  flex-direction: row;
+}

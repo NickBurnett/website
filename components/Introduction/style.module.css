@@ -30,5 +30,4 @@
 .learnMore:hover {
   color: var(--color-black);
   background-color: var(--color-white);
-  border-color: var(--color-black);
 }

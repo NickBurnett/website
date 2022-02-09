@@ -12,13 +12,13 @@
   justify-content: center;
 }
 .toolbarItem {
-  color: var(--color-gray);
-  transition: 0.25s;
+  color: var(--color-white);
+  transition: 0.2s;
   margin: 0.5rem;
   cursor: pointer;
 }
 .toolbarItem:hover {
-  color: var(--color-white);
+  color: var(--color-green);
   transform: translateY(-10%);
 }
 .line {
@@ -29,5 +29,5 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  background-color: var(--color-gray);
+  background-color: var(--color-white);
 }

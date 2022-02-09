@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Gallery from "../components/Gallery";
 import Introduction from "../components/Introduction";
 import Toolbar from "../components/Toolbar";
 
@@ -14,6 +15,7 @@ export default function Index() {
   return (
     <div id='root'>
       <Toolbar />
+      <Gallery title='Projects' />
     </div>
   )
 }
