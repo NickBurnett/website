@@ -1,7 +1,7 @@
-import { useState } from "react";
-import Gallery from "../components/Gallery";
-import Introduction from "../components/Introduction";
-import Toolbar from "../components/Toolbar";
+import { useState } from "react"
+import Gallery from "../components/Gallery"
+import Introduction from "../components/Introduction"
+import Toolbar from "../components/Toolbar"
 
 export default function Index() {
   const [learnMore, setLearnMore] = useState(false)
@@ -15,7 +15,22 @@ export default function Index() {
   return (
     <div id='root'>
       <Toolbar />
-      <Gallery title='Projects' />
+      <Gallery title='Projects' items={[
+        {
+          name: 'Project',
+          stack: ['Java'],
+          description: [
+            'This really is project'
+          ]
+        },
+        {
+          name: 'Another Project',
+          stack: ['C++'],
+          description: [
+            'This really is project'
+          ]
+        }
+      ]} />
     </div>
   )
 }

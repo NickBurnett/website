@@ -10,3 +10,22 @@
   display: flex;
   flex-direction: row;
 }
+.tabs {
+  margin: var(--text-normal) 0;
+}
+.tab {
+  position: relative;
+  border-radius: 3px;
+  background-color: var(--color-light-black);
+  padding: 0.125rem 0.25rem;
+  margin: 0.125rem 0;
+}
+.tabSelect {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  margin-right: 0.125rem;
+  background-color: var(--color-green);
+}
