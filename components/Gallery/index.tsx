@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import styles from './style.module.css'
 export interface GalleryItem {
   name: string
@@ -9,8 +10,9 @@ export interface GalleryProps {
   items: GalleryItem[]
 }
 export default function Gallery({ title, items }: GalleryProps) {
-  const tabs = items.map((i) => <div key={i.name} className={styles.tab}>
-    <div className={styles.tabSelect} />
+  const [selectedTab, setTab] = useState('Project');
+  const tabs = items.map((i) => <div key={i.name} className={styles.tab} onClick={() => setTab(i.name)}>
+    <div className={styles.tabSelect} style={selectedTab === i.name ? { opacity: 1 } : {}} />
     <div>{i.name}</div>
   </div>)
   return (

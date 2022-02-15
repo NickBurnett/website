@@ -5,7 +5,7 @@ export interface ToolbarProps {
 
 }
 export default function Toolbar({ }: ToolbarProps) {
-  const size = '1.825rem';
+  const size = '2rem';
   return (
     <div id={styles.toolbar}>
       <div className={styles.toolbarList}>
