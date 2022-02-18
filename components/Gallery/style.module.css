@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   margin: var(--text-mega-giga);
+  width: fit-content;
 }
 .title {
   font-size: var(--text-large);
@@ -9,9 +10,11 @@
 .content {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .tabs {
   margin: var(--text-normal) 0;
+  white-space: nowrap;
 }
 .tab {
   position: relative;
@@ -37,4 +40,40 @@
   background-color: var(--color-green);
   opacity: 0;
   transition: opacity 0.25s;
+}
+.info {
+  position: relative;
+  margin: var(--text-normal) var(--text-small);
+  min-width: 65%;
+  max-width: 70%;
+}
+.name {
+  font-size: var(--text-large);
+}
+.stack {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  color: var(--color-green);
+}
+.stackItem {
+  font-size: var(--text-normal);
+  margin: 7px 14px 0 0;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.stackItem:hover {
+  transform: scale(110%);
+}
+.description {
+  font-size: var(--text-normal);
+  margin: 10px 10px 10px 0;
+  padding-left: var(--text-normal);
+}
+.description::before {
+  position: absolute;
+  content: '✦';
+  font-size: var(--text-normal);
+  left: 0px;
+  color: var(--color-green);
 }
