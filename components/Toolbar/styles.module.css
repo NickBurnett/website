@@ -31,3 +31,8 @@
   transform: translateX(-50%);
   background-color: var(--color-white);
 }
+@media screen and (max-width: 800px) {
+  #toolbar {
+    left: 1vw;
+  }
+}
