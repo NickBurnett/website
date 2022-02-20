@@ -2,7 +2,10 @@
   display: flex;
   flex-direction: column;
   margin: var(--text-mega-giga);
-  width: fit-content;
+  width: 80%;
+  opacity: 0;
+  animation: fade 0.5s;
+  animation-fill-mode: forwards;
 }
 .title {
   font-size: var(--text-large);
@@ -10,7 +13,6 @@
 .content {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
 }
 .tabs {
   margin: var(--text-normal) 0;
@@ -44,8 +46,7 @@
 .info {
   position: relative;
   margin: var(--text-normal) var(--text-small);
-  min-width: 65%;
-  max-width: 70%;
+  animation: fade 0.2s;
 }
 .name {
   font-size: var(--text-large);
@@ -76,4 +77,17 @@
   font-size: var(--text-normal);
   left: 0px;
   color: var(--color-green);
+}
+@media screen and (max-width: 650px) {
+  .content {
+    flex-wrap: wrap;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
