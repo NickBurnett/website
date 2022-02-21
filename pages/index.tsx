@@ -1,11 +1,13 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Gallery from "../components/Gallery"
 import Introduction from "../components/Introduction"
 import Toolbar from "../components/Toolbar"
 import info from "../info.json"
+import { updateTheme } from "../util/theme"
 
 export default function Index() {
   const [learnMore, setLearnMore] = useState(false)
+  useEffect(() => updateTheme(), [])
   if (!learnMore) {
     return (
       <div id='root'>

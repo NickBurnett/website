@@ -5,6 +5,27 @@
   --color-white: #fafafa;
   --color-green: #66ff7d;
   --color-greent: #66ff7d30;
+  --color-orange: #ff7010;
+  --color-oranget: #ff701030;
+  --color-sun-a: #ff774e;
+  --color-sun-b: #ffb834;
+  --color-sun-c: #fffc57;
+  --color-moon: #56ddff;
+
+  --dark-background: var(--color-black);
+  --dark-text: var(--color-white);
+  --dark-accent-a: var(--color-green);
+  --dark-accent-b: var(--color-greent);
+
+  --light-background: var(--color-white);
+  --light-text: var(--color-black);
+  --light-accent-a: var(--color-orange);
+  --light-accent-b: var(--color-oranget);
+
+  --theme-background: var(--light-background);
+  --theme-text: var(--light-text);
+  --theme-accent-a: var(--light-accent-a);
+  --theme-accent-b: var(--light-accent-b);
 
   --text-small: 1.25rem;
   --text-normal: 1.5rem;
@@ -16,15 +37,17 @@
 }
 html,
 body {
-  background-color: var(--color-black);
-  color: var(--color-white);
+  background-color: var(--theme-background);
+  color: var(--theme-text);
 
   padding: 0;
   margin: 0;
   font-family: monospace;
+
+  transition: 0.25s;
 }
 ::selection {
-  background-color: var(--color-greent);
+  background-color: var(--theme-accent-b);
 }
 a {
   color: inherit;

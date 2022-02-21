@@ -29,7 +29,7 @@
   border-style: solid;
   border-width: 2px;
   border-radius: 1rem;
-  border-color: var(--color-white);
+  border-color: var(--theme-text);
   cursor: pointer;
   transition: 0.25s;
   opacity: 0;
@@ -38,8 +38,8 @@
   animation-fill-mode: forwards;
 }
 .learnMore:hover {
-  color: var(--color-black);
-  background-color: var(--color-white);
+  color: var(--theme-background);
+  background-color: var(--theme-text);
 }
 .fade {
   opacity: 1;
