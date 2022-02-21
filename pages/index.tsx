@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import Gallery from "../components/Gallery"
+import InfoBlock from "../components/InfoBlock"
 import Introduction from "../components/Introduction"
 import Toolbar from "../components/Toolbar"
 import info from "../info.json"
@@ -23,8 +24,10 @@ export default function Index() {
   return (
     <div id='root'>
       <Toolbar />
+      <InfoBlock title='About Me' info={info.about} />
       <Gallery title='Projects' items={info.projects.sort((a, b) => a.name.localeCompare(b.name))} />
       <Gallery title='Experience' items={info.experience} />
+      <InfoBlock title='Contact' info={info.contact} />
     </div>
   )
 }

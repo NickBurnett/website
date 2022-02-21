@@ -1,7 +1,7 @@
 :root {
   --color-black: #0f0f0f;
   --color-light-black: #1f1f1f;
-  --color-gray: #888888;
+  --color-gray: #e6e6e6;
   --color-white: #fafafa;
   --color-green: #66ff7d;
   --color-greent: #66ff7d30;
@@ -17,7 +17,7 @@
   --dark-accent-a: var(--color-green);
   --dark-accent-b: var(--color-greent);
 
-  --light-background: var(--color-white);
+  --light-background: var(--color-gray);
   --light-text: var(--color-black);
   --light-accent-a: var(--color-orange);
   --light-accent-b: var(--color-oranget);

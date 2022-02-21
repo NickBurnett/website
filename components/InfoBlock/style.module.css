@@ -1,0 +1,28 @@
+.infoBlock {
+  display: flex;
+  flex-direction: column;
+  margin: var(--text-mega-giga);
+  width: 80%;
+  opacity: 0;
+  animation: fade 0.5s;
+  animation-fill-mode: forwards;
+}
+.title {
+  font-size: var(--text-large);
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.info {
+  font-size: var(--text-normal);
+  margin: var(--text-normal) 0 0;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

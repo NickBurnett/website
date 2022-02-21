@@ -1,4 +1,9 @@
 {
+  "about": [
+    "I'm Nick, a software developer and computer science student from Dallas, TX. I enjoy building things both by myself and with my friends during my free time. As a software engineer, my goal is to take any idea, product, or experience and make it as best as possible for the user.",
+    "I'm currently a sophomore at the University of Texas at Dallas. Aside from my academic achievements, I am heavily involved in student organizations like the Association for Computing Machinery as an officer, developer, and program lead.",
+    "I'm always looking for more opportunities to help others, gain experience, and expand my technical knowledge, so I'm actively looking for internships and similar opportunities for Fall 2022, Winter 2023, and Summer of 2023."
+  ],
   "projects": [
     {
       "name": "CLI Toolkit",
@@ -86,6 +91,9 @@
         "I start in June 2022 :D"
       ]
     }
+  ],
+  "contact": [
+    "If you'd like to get in contact, feel free to message me on LinkedIn! I'd love to connect and discuss potential opportunities. You'll also be able to find my full resume there. Also, check out my GitHub!"
   ],
   "links": {
     "github": "https://github.com/NickBurnett",
