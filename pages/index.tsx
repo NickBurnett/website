@@ -9,14 +9,20 @@ export default function Index() {
   if (!learnMore) {
     return (
       <div id='root'>
-        <Introduction learnMore={() => setLearnMore(true)} />
+        <Introduction learnMore={(container, fade) => {
+          if (!container || !container.current) return
+          const e = container.current
+          e.classList.add(fade)
+          setTimeout(() => setLearnMore(true), 1000)
+        }} />
       </div>
     )
   }
   return (
     <div id='root'>
       <Toolbar />
-      <Gallery title='Projects' items={info.projects} />
+      <Gallery title='Projects' items={info.projects.sort((a, b) => a.name.localeCompare(b.name))} />
+      <Gallery title='Experience' items={info.experience} />
     </div>
   )
 }

@@ -52,5 +52,43 @@
         "Because Docker is the greatest invention in human history, the site renders server-side in a Docker container on AWS."
       ]
     }
-  ]
+  ],
+  "experience": [
+    {
+      "name": "The Motley Fool",
+      "stack": ["Bash", "Python", "Terraform", "Kubernetes", "Docker", "AWS"],
+      "description": [
+        "Automated, containerized, and deployed 100+ full-stack website applications using internal Kubernetes clusters and 2 milti-region AWS ECS instances with Terraform",
+        "Collected and recorded regional metrics on 70+ Motley Fool internal and external services into Datadog",
+        "Implemented cross-platform Windows Native support for 2 internal proxy-based development environments using SSL/TLS certificates, collaborating with DNS specialists to guarnatee production compatibility"
+      ]
+    },
+    {
+      "name": "Tesla",
+      "stack": ["NodeJS", "ReactJS", "Python", "TypeScript", "GraphQL"],
+      "description": [
+        "Simplified container-frame visualization across internal apps, impacting 3000+ internal users and customers",
+        "Refined supercharger site data for 30000+ locations, improving data integrity and visual precision using MapboxGL",
+        "Overhauled supercharger site planning pipeline using GraphQL, reducing latency by a margin of 97% across a query of 5000+ supercharger sites internationally"
+      ]
+    },
+    {
+      "name": "Datadog",
+      "stack": ["Kubernetes", "Docker", "GO", "Python", "Temporal"],
+      "description": [
+        "I currently work here :D"
+      ]
+    },
+    {
+      "name": "Two Sigma",
+      "stack": [],
+      "description": [
+        "I start in June 2022 :D"
+      ]
+    }
+  ],
+  "links": {
+    "github": "https://github.com/NickBurnett",
+    "linkedin": "https://www.linkedin.com/in/nicolasaburnett/"
+  }
 }
