@@ -13,7 +13,7 @@
   animation-fill-mode: forwards;
 }
 .hello {
-  font-size: var(--text-small);
+  font-size: var(--text-normal);
 }
 .name {
   font-size: var(--text-mega-giga);
@@ -24,6 +24,7 @@
 
 .learnMore {
   font-size: var(--text-normal);
+  font-weight: 900;
   margin: 1rem;
   padding: 0.5rem;
   border-style: solid;

@@ -1,0 +1,8 @@
+node_modules
+.next
+.gitignore
+.git
+.terraform
+.terraform*
+terraform.tfstate
+main.tf

@@ -22,7 +22,7 @@
 }
 .toolbarItem:hover {
   color: var(--theme-accent-a);
-  transform: translateY(-10%);
+  transform: scale(130%);
 }
 .sunItem,
 .moonItem {
