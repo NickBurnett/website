@@ -11,6 +11,7 @@
   animation: fade 0.25s;
   animation-delay: var(--delay);
   animation-fill-mode: forwards;
+  text-align: center;
 }
 .hello {
   font-size: var(--text-normal);
