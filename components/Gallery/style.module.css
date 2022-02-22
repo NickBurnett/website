@@ -66,16 +66,17 @@
 .stackItem:hover {
   transform: scale(110%);
 }
+.descriptionContainer {
+  display: flex;
+  flex-flow: row;
+}
 .description {
   font-size: var(--text-normal);
-  margin: 10px 10px 10px 0;
-  padding-left: var(--text-normal);
+  margin: 10px 10px 10px 5px;
 }
-.description::before {
-  position: absolute;
-  content: '✦';
+.descriptionBefore {
   font-size: var(--text-normal);
-  left: 0px;
+  margin: 10px 0;
   color: var(--theme-accent-a);
 }
 @media screen and (max-width: 650px) {

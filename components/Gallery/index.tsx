@@ -17,7 +17,10 @@ export default function Gallery({ title, items }: GalleryProps) {
   </div>)
   const cur = items[selectedTab]
   const stack = cur.stack.sort((a, b) => a.localeCompare(b)).map((i) => <div key={i} className={styles.stackItem} onClick={() => window.open(`https://google.com/search?q=${i}`, '_target')}>{i}</div>)
-  const desc = cur.description.map((i) => <div key={i} className={styles.description}>{i}</div>)
+  const desc = cur.description.map((i) => <div key={i} className={styles.descriptionContainer}>
+    <div className={styles.descriptionBefore}>◈</div>
+    <div className={styles.description}>{i}</div>
+  </div>)
   return (
     <div className={styles.gallery}>
       <div className={styles.title}>{title}</div>
