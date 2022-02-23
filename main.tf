@@ -96,8 +96,8 @@ resource "aws_security_group" "lb_sg" {
 }
 resource "aws_lb_target_group" "tg" {
   name        = "website-tg"
-  port        = 80
-  protocol    = "HTTP"
+  port        = 443
+  protocol    = "HTTPS"
   target_type = "ip"
   vpc_id      = aws_default_vpc.default_vpc.id
   health_check {
@@ -105,10 +105,17 @@ resource "aws_lb_target_group" "tg" {
     path    = "/"
   }
 }
+resource "aws_acm_certificate" "cert" {
+  domain_name       = "nickburnett.me"
+  validation_method = "DNS"
+
+}
 resource "aws_lb_listener" "listener" {
   load_balancer_arn = aws_alb.load_balancer.arn
-  port              = "80"
-  protocol          = "HTTP"
+  port              = 443
+  protocol          = "HTTPS"
+  ssl_policy        = "ELBSecurityPolicy-2016-08"
+  certificate_arn   = aws_acm_certificate.cert.arn
   default_action {
     type             = "forward"
     target_group_arn = aws_lb_target_group.tg.arn
