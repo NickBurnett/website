@@ -30,7 +30,7 @@ resource "aws_ecs_task_definition" "task" {
   network_mode             = "awsvpc"
   memory                   = 512
   cpu                      = 256
-  execution_role_arn       = aws_iam_role.ecsTaskExecutionRole.arn
+  execution_role_arn       = aws_iam_role.iamWebsite.arn
 }
 resource "aws_default_vpc" "default_vpc" {}
 resource "aws_default_subnet" "default_subnet_a" {
@@ -56,8 +56,8 @@ resource "aws_ecs_service" "website-service" {
     security_groups  = ["${aws_security_group.svc_sg.id}"]
   }
 }
-resource "aws_iam_role" "ecsTaskExecutionRole" {
-  name               = "ecsTaskExecutionRole"
+resource "aws_iam_role" "iamWebsite" {
+  name               = "iamWebsite"
   assume_role_policy = data.aws_iam_policy_document.assume_role_policy.json
 }
 resource "aws_alb" "load_balancer" {
@@ -105,10 +105,17 @@ resource "aws_lb_target_group" "tg" {
     path    = "/"
   }
 }
+resource "aws_acm_certificate" "cert" {
+  domain_name       = "nickburnett.me"
+  validation_method = "DNS"
+
+}
 resource "aws_lb_listener" "listener" {
   load_balancer_arn = aws_alb.load_balancer.arn
-  port              = "80"
+  port              = 80
   protocol          = "HTTP"
+  # ssl_policy        = "ELBSecurityPolicy-2016-08"
+  # certificate_arn   = aws_acm_certificate.cert.arn
   default_action {
     type             = "forward"
     target_group_arn = aws_lb_target_group.tg.arn
@@ -123,7 +130,7 @@ data "aws_iam_policy_document" "assume_role_policy" {
     }
   }
 }
-resource "aws_iam_role_policy_attachment" "ecsTaskExecutionRole_policy" {
-  role       = aws_iam_role.ecsTaskExecutionRole.name
+resource "aws_iam_role_policy_attachment" "iamWebsite_policy" {
+  role       = aws_iam_role.iamWebsite.name
   policy_arn = "arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy"
 }
