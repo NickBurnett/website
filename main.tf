@@ -82,8 +82,8 @@ resource "aws_security_group" "svc_sg" {
 }
 resource "aws_security_group" "lb_sg" {
   ingress {
-    from_port   = 80
-    to_port     = 80
+    from_port   = 443
+    to_port     = 443
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
@@ -96,7 +96,7 @@ resource "aws_security_group" "lb_sg" {
 }
 resource "aws_lb_target_group" "tg" {
   name        = "website-tg"
-  port        = 443
+  port        = 433
   protocol    = "HTTPS"
   target_type = "ip"
   vpc_id      = aws_default_vpc.default_vpc.id
