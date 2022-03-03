@@ -40,6 +40,10 @@ resource "aws_default_subnet" "default_subnet_b" {
   availability_zone = "us-east-2b"
 }
 resource "aws_ecs_service" "website-service" {
+  depends_on = [
+    aws_lb_listener.listener,
+    aws_lb_listener.listener_https
+  ]
   name            = "website-service"
   cluster         = aws_ecs_cluster.cluster.id
   task_definition = aws_ecs_task_definition.task.arn
@@ -112,9 +116,8 @@ resource "aws_lb_target_group" "tg" {
   }
 }
 resource "aws_acm_certificate" "cert" {
-  domain_name       = "nickburnett.me"
+  domain_name       = "nickburnett.dev"
   validation_method = "DNS"
-
 }
 resource "aws_lb_listener" "listener" {
   depends_on = [
