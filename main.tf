@@ -44,11 +44,12 @@ resource "aws_ecs_service" "website-service" {
     aws_lb_listener.listener,
     aws_lb_listener.listener_https
   ]
-  name            = "website-service"
-  cluster         = aws_ecs_cluster.cluster.id
-  task_definition = aws_ecs_task_definition.task.arn
-  launch_type     = "FARGATE"
-  desired_count   = 1
+  name                 = "website-service"
+  cluster              = aws_ecs_cluster.cluster.id
+  task_definition      = aws_ecs_task_definition.task.arn
+  launch_type          = "FARGATE"
+  desired_count        = 1
+  force_new_deployment = true
   load_balancer {
     target_group_arn = aws_lb_target_group.tg.arn
     container_name   = aws_ecs_task_definition.task.family
