@@ -1,0 +1,12 @@
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  build_image:
+    name: 'Build Image'
+    runs-on: 'ubuntu-latest'
+    steps:
+      - name: 'Test Step'
+        run: 'echo test job'
