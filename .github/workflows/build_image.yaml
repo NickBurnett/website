@@ -5,8 +5,22 @@ on:
 
 jobs:
   build_image:
-    name: 'Build Image'
+    name: 'Build & Push Image'
     runs-on: 'ubuntu-latest'
     steps:
-      - name: 'Test Step'
-        run: 'echo test job'
+      - name: 'Checkout Repository'
+        uses: actions/checkout@v2
+      - name: 'Configure AWS'
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-2
+      - name: 'Login to ECR'
+        id: login
+        uses: aws-actions/amazon-ecr-login@v1
+      - name: 'Build & Push Image'
+        env:
+          ECR_REGISTRY: ${{ steps.login.outputs.registry }}
+          ECR_REPOSITORY: website
+        run: docker image build -t $ECR_REGISTRY/$ECR_REPOSITORY . && docker push $ECR_REGISTRY/$ECR_REPOSITORY
