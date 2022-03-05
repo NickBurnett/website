@@ -56,6 +56,15 @@
         "Everything you see on this site is pure JS, HTML and CSS (mostly JS, though). It's all custom, so libraries like TailwindCSS and Bootstrap weren't used.",
         "Because Docker is the greatest invention in human history, the site renders server-side in a Docker container on AWS."
       ]
+    },
+    {
+      "name": "Stock Sonar",
+      "stack": ["NextJS", "ReactJS", "NodeJS", "TypeScript", "Python", "Flask", "GCP"],
+      "description": [
+        "1st Prize in HackUTD's Goldman Sachs challenge",
+        "A stock tracking tool that provides up-to-date stock information, ranking them based on current public sentiment.",
+        "Stock information is compiled from various sources, and the sentiment analysis is done by feeding in Twitter and Reddit posts to a Python back-end, which scores each stock based on the market's current view of the stock."
+      ]
     }
   ],
   "experience": [
