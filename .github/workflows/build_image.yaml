@@ -1,11 +1,11 @@
 on:
   push:
     branches:
-      - 'feat/cicd'
+      - 'main'
 
 jobs:
   build_image:
-    name: 'Build Image'
+    name: 'Build & Push Image'
     runs-on: 'ubuntu-latest'
     steps:
       - name: 'Checkout Repository'
@@ -17,6 +17,10 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2
       - name: 'Login to ECR'
+        id: login
         uses: aws-actions/amazon-ecr-login@v1
-      - name: 'List GitHub'
-        run: pwd && ls -l
+      - name: 'Build & Push Image'
+        env:
+          ECR_REGISTRY: ${{ steps.login.outputs.registry }}
+          ECR_REPOSITORY: website
+        run: docker image build -t $ECR_REGISTRY/$ECR_REPOSITORY . && docker push $ECR_REGISTRY/$ECR_REPOSITORY
