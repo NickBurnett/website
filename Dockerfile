@@ -1,11 +1,9 @@
-from node:16-slim
+FROM node:16-slim
 
-workdir /app
-copy . /app
+ADD . /app
+WORKDIR /app
+RUN npm i && npm run build
 
-run npm i
-run npm run build
+EXPOSE 3000
 
-expose 8080
-
-cmd [ "npm", "start" ]
+CMD [ "npm", "start" ]

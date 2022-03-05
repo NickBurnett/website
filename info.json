@@ -1,0 +1,102 @@
+{
+  "about": [
+    "I'm Nick, a software developer and computer science student from Dallas, TX. I enjoy building things both by myself and with my friends during my free time. As a software engineer, my goal is to take any idea, product, or experience and make it as best as possible for the user.",
+    "I'm currently a sophomore at the University of Texas at Dallas. Aside from my academic achievements, I am heavily involved in student organizations like the Association for Computing Machinery as an officer, developer, and program lead.",
+    "I'm always looking for more opportunities to help others, gain experience, and expand my technical knowledge, so I'm actively looking for internships and similar opportunities for Fall 2022, Winter 2023, and Summer of 2023."
+  ],
+  "projects": [
+    {
+      "name": "CLI Toolkit",
+      "stack": ["Java", "C", "C++", "Python", "Bash", "JavaScript", "TypeScript", "NodeJS", "ExpressJS"],
+      "description": [
+        "A deployed tookit for Linux-based operating systems. Increases the quality of the command-line experience.",
+        "The toolkit sports a multi-purpose string generator used to generate passwords, keys and more. In addition, the tookit sports a practical regex matcher with full support for modern regex characters and patterns.",
+        "Using the NodeJS runtime and ExpressJS, the tookit is deployed on a webserver hosted on AWS with an integrated API to download various install scripts using the command-line."
+      ]
+    },
+    {
+      "name": "Game Framework",
+      "stack": ["Java", "LWJGL", "OpenGL", "OpenAL", "Socket I/O"],
+      "description": [
+        "A work-in-progress, optimized 2D game framework written in Java around the LWJGL library. The framework targets graphics at a primitive level to increase optimization and seamlessness during development.",
+        "The game framework will feature a completely customized integration with Java's Socket I/O engine to allow for cross-platform, cross-device multiplayer via TCP."
+      ]
+    },
+    {
+      "name": "Meet-Me-At",
+      "stack": ["React Native", "NodeJS", "ExpressJS", "HTML", "JavaScript", "CSS", "MongoDB"],
+      "description": [
+        "An event planning solution designed to simplify event planning between family members, friends and the local community.",
+        "With a fully-functioning login and registration system, MMA thrives on an incredibly simplistic visual design and experience. The application is visually responsive across multiple devices including Android and all-generation iPhones.",
+        "The backend is built on the NodeJS runtime with cross-device compatibility and multi-threaded integrations with the MongoDB Cluster."
+      ]
+    },
+    {
+      "name": "Community Bot",
+      "stack": ["DiscordJS", "NodeJS", "ExpressJS", "JavaScript", "TypeScript", "MongoDB", "GCP"],
+      "description": [
+        "An automated community service for members of the Association of Computing Machinery designed to integrate the technologies and divisions of ACM into a single tool.",
+        "Using the popular DiscordJS library, I'm working on a team of 3 to provide the ACM community with powerful and intuitive tools to improve their overall productivity and experience."
+      ]
+    },
+    {
+      "name": "Trading Docks",
+      "stack": ["ReactJS", "NodeJS", "ExpressJS", "JavaScript", "TypeScript", "Python", "MongoDB"],
+      "description": [
+        "A website designed to allay the frustration and ambiguity that comes with modern day trading. The website targets newcomers into the Stock Market by providing a simple, intuitive way to test out their custom stock trading algorithms.",
+        "We created our own interpreted language in Python to make the algorithm building experience as clean as possible. Our most complex actions could be done in as little as 15 characters with our customized language.",
+        "The site features a customized login system with built-in caching to improve the user's experience. While authentication with popular accounts like Google, Facebook and GitHub isn't possible just yet, our seamlessly designed system allows a quick and easy way to integrate them in the future."
+      ]
+    },
+    {
+      "name": "Personal Site",
+      "stack": ["NextJS", "ReactJS", "NodeJS", "HTML", "JavaScript", "TypeScript", "CSS", "Docker", "AWS"],
+      "description": [
+        "A website designed to highlight my technical strengths, projects, and work experience.",
+        "Everything you see on this site is pure JS, HTML and CSS (mostly JS, though). It's all custom, so libraries like TailwindCSS and Bootstrap weren't used.",
+        "Because Docker is the greatest invention in human history, the site renders server-side in a Docker container on AWS."
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "name": "The Motley Fool",
+      "stack": ["Bash", "Python", "Terraform", "Kubernetes", "Docker", "AWS"],
+      "description": [
+        "Automated, containerized, and deployed 100+ full-stack website applications using internal Kubernetes clusters and 2 milti-region AWS ECS instances with Terraform",
+        "Collected and recorded regional metrics on 70+ Motley Fool internal and external services into Datadog",
+        "Implemented cross-platform Windows Native support for 2 internal proxy-based development environments using SSL/TLS certificates, collaborating with DNS specialists to guarnatee production compatibility"
+      ]
+    },
+    {
+      "name": "Tesla",
+      "stack": ["NodeJS", "ReactJS", "Python", "TypeScript", "GraphQL"],
+      "description": [
+        "Simplified container-frame visualization across internal apps, impacting 3000+ internal users and customers",
+        "Refined supercharger site data for 30000+ locations, improving data integrity and visual precision using MapboxGL",
+        "Overhauled supercharger site planning pipeline using GraphQL, reducing latency by a margin of 97% across a query of 5000+ supercharger sites internationally"
+      ]
+    },
+    {
+      "name": "Datadog",
+      "stack": ["Kubernetes", "Docker", "GO", "Python", "Temporal"],
+      "description": [
+        "I currently work here :D"
+      ]
+    },
+    {
+      "name": "Two Sigma",
+      "stack": [],
+      "description": [
+        "I start in June 2022 :D"
+      ]
+    }
+  ],
+  "contact": [
+    "If you'd like to get in contact, feel free to message me on LinkedIn! I'd love to connect and discuss potential opportunities. You'll also be able to find my full resume there. Also, check out my GitHub!"
+  ],
+  "links": {
+    "github": "https://github.com/NickBurnett",
+    "linkedin": "https://www.linkedin.com/in/nicolasaburnett/"
+  }
+}

@@ -1,0 +1,94 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  margin: calc(var(--text-mega-giga) * 1.5);
+  width: 80%;
+  opacity: 0;
+  animation: fade 0.5s;
+  animation-fill-mode: forwards;
+}
+.title {
+  font-size: var(--text-large);
+}
+.content {
+  display: flex;
+  flex-direction: row;
+}
+.tabs {
+  margin: var(--text-normal) 0;
+  white-space: nowrap;
+}
+.tab {
+  position: relative;
+  border-radius: 3px;
+  font-size: var(--text-medium-less);
+  font-weight: 900;
+  background-color: var(--theme-accent-b);
+  padding: 0.25rem 0.5rem;
+  margin: 0.125rem 0;
+  cursor: pointer;
+}
+.tab:hover .tabSelect {
+  opacity: 1;
+}
+.tabSelect {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  border-radius: 3px;
+  margin-right: 0.125rem;
+  background-color: var(--theme-accent-a);
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.info {
+  position: relative;
+  margin: var(--text-normal) var(--text-small);
+  animation: fade 0.2s;
+}
+.name {
+  font-size: var(--text-large);
+}
+.stack {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  color: var(--theme-accent-a);
+}
+.stackItem {
+  font-size: var(--text-normal);
+  margin: 7px 14px 0 0;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.stackItem:hover {
+  transform: scale(110%);
+}
+.descriptionContainer {
+  display: flex;
+  flex-flow: row;
+}
+.description {
+  font-size: var(--text-normal);
+  margin: 10px 10px 10px 5px;
+}
+.descriptionBefore {
+  font-size: var(--text-normal);
+  margin: 10px 0;
+  color: var(--theme-accent-a);
+}
+@media screen and (max-width: 650px) {
+  .content {
+    flex-wrap: wrap;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

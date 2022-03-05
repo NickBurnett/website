@@ -1,0 +1,9 @@
+.circle {
+  fill: var(--color-sun-c);
+}
+.path1 {
+  fill: var(--color-sun-a);
+}
+.path2 {
+  fill: var(--color-sun-b);
+}

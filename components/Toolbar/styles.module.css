@@ -1,0 +1,56 @@
+#toolbar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: var(--text-mega);
+  opacity: 0;
+  animation: fade 0.25s;
+  animation-fill-mode: forwards;
+}
+.toolbarList {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+.toolbarItem {
+  color: var(--theme-text);
+  transition: 0.2s;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+.toolbarItem:hover {
+  color: var(--theme-accent-a);
+  transform: scale(130%);
+}
+.sunItem,
+.moonItem {
+  transition: 0.2s;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+.sunItem:hover {
+  transform: rotateZ(180deg) scale(150%);
+}
+.moonItem:hover {
+  transform: scale(150%);
+}
+.line {
+  position: relative;
+  margin-top: 1rem;
+  width: 2px;
+  height: 20vh;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--theme-text);
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,58 @@
+#introduction {
+  --delay: 0.35s;
+  --button-delay: calc(var(--delay) + 1s);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 100vh;
+  opacity: 0;
+  animation: fade 0.25s;
+  animation-delay: var(--delay);
+  animation-fill-mode: forwards;
+  text-align: center;
+}
+.hello {
+  font-size: var(--text-normal);
+}
+.name {
+  font-size: var(--text-mega-giga);
+}
+.desc {
+  font-size: var(--text-medium);
+}
+
+.learnMore {
+  font-size: var(--text-normal);
+  font-weight: 900;
+  margin: 1rem;
+  padding: 0.5rem;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 1rem;
+  border-color: var(--theme-text);
+  cursor: pointer;
+  transition: 0.25s;
+  opacity: 0;
+  animation: fade 0.5s;
+  animation-delay: var(--button-delay);
+  animation-fill-mode: forwards;
+}
+.learnMore:hover {
+  color: var(--theme-background);
+  background-color: var(--theme-text);
+}
+.fade {
+  opacity: 1;
+  animation: fade 0.25s reverse;
+  animation-fill-mode: forwards;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
