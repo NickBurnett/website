@@ -1,12 +1,22 @@
 on:
   push:
     branches:
-      - 'main'
+      - 'feat/cicd'
 
 jobs:
   build_image:
     name: 'Build Image'
     runs-on: 'ubuntu-latest'
     steps:
-      - name: 'Test Step'
-        run: 'echo test job'
+      - name: 'Checkout Repository'
+        uses: actions/checkout@v2
+      - name: 'Configure AWS'
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-2
+      - name: 'Login to ECR'
+        uses: aws-actions/amazon-ecr-login@v1
+      - name: 'List GitHub'
+        run: pwd && ls -l
