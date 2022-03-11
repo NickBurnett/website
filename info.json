@@ -72,7 +72,7 @@
       "name": "The Motley Fool",
       "stack": ["Bash", "Python", "Terraform", "Kubernetes", "Docker", "AWS"],
       "description": [
-        "Automated, containerized, and deployed 100+ full-stack website applications using internal Kubernetes clusters and 2 milti-region AWS ECS instances with Terraform",
+        "Automated, containerized, and deployed 3 full-stack website applications using internal Kubernetes clusters and 2 milti-region AWS ECS instances with Terraform",
         "Collected and recorded regional metrics on 70+ Motley Fool internal and external services into Datadog",
         "Implemented cross-platform Windows Native support for 2 internal proxy-based development environments using SSL/TLS certificates, collaborating with DNS specialists to guarnatee production compatibility"
       ]

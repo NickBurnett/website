@@ -38,6 +38,16 @@
   --text-mega: 3rem;
   --text-mega-giga: 3.5rem;
 }
+:root::-webkit-scrollbar {
+  width: 9px;
+}
+:root::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+:root::-webkit-scrollbar-thumb {
+  background-color: var(--theme-accent-a);
+  border-radius: 5px;
+}
 html,
 body {
   background-color: var(--theme-background);
