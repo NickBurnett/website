@@ -119,6 +119,10 @@ resource "aws_acm_certificate" "cert" {
   domain_name       = "nickburnett.dev"
   validation_method = "DNS"
 }
+resource "aws_acm_certificate" "cert2" {
+  domain_name       = "nickburnett.me"
+  validation_method = "DNS"
+}
 resource "aws_lb_listener" "listener" {
   depends_on = [
     aws_lb_target_group.tg
@@ -143,7 +147,7 @@ resource "aws_lb_listener" "listener_https" {
   port              = 443
   protocol          = "HTTPS"
   ssl_policy        = "ELBSecurityPolicy-2016-08"
-  certificate_arn   = aws_acm_certificate.cert.arn
+  certificate_arn   = aws_acm_certificate.cert2.arn
   default_action {
     type             = "forward"
     target_group_arn = aws_lb_target_group.tg.arn
